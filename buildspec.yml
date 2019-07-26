@@ -1,0 +1,32 @@
+version: 0.2
+
+            
+phases:
+  install:
+      runtime-versions:
+      java: openjdk8
+    commands:
+      - echo install
+    pre_build:
+  
+    commands:
+    - echo pre_build
+      - command
+      - command
+   
+  build:
+    commands:
+    - mvn:pacakge
+    - echo build
+      - command
+      - command
+   
+  post_build:
+    commands:
+      - echo post_build
+    
+artifacts:
+  files: 
+  - target\todo-rest-api-aws_new-0.0.1-SNAPSHOT.jar
+ 
+ 
